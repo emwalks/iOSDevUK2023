@@ -1,6 +1,6 @@
 # iOS Dev UK 2023
 
-## Building Watch OS
+## Building Watch OS - Hidde van der Ploeg
 
 - Add complications
     - even if it just opens your app
@@ -12,7 +12,8 @@
 - iCloud sync
 - NSUbiquitousKeyValueStore() container of KV pairs to share data among instances
 - Always ship an iOS companion
-- Add heartrate and privacy capability
+- Add heartrate and privacy capability under info
+- health share
 
 ### Extra buttons
 - Digital crown
