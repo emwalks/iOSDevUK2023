@@ -1,12 +1,20 @@
 import SwiftUI
+import ComposableArchitecture
 
 struct CounterView: View {
+    
+    let store: StoreOf<Counter>
+    
 	@State var count: Int = 0
 	@State var fact: String?
 	@State var showFact: Bool = false
 
 	var body: some View {
 		NavigationStack {
+            WithViewStore(store,
+                          observe: \.count) { viewStore in
+                
+            }
 			VStack {
 				Text("\(count)")
 					.font(.largeTitle)
@@ -66,10 +74,9 @@ struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
 	static var previews: some View {
 		CounterView(
-//			store: .init(
-//				initialState: .init(count: 0),
-//				reducer: { Counter() }
-//			)
-		)
+			store: .init(
+				initialState: .init(count: 0),
+				reducer: { Counter() }
+			))
 	}
 }
