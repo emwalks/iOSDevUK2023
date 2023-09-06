@@ -33,6 +33,33 @@ https://github.com/pointfreeco/swift-composable-architecture
 
 It is possible to separate a live implementation from development
 
+## Developer Experience
+
+https://github.com/pointfreeco/swift-composable-architecture
+
+
+- Import via SPM
+- Active community
+- Memory footprint of framework
+- 
+
+PROs and CONs
+
+Pros
+- logic off app is well defined
+
+
+Cons
+- extra learning (different way of thinking)
+- targetting single entry point apps (relies hierarchy of views )
+
+Areas for improvement/growth
+- make it more like vanilla UI
+
+Questions
+- Is the dependency a singleton pattern?
+- What's the memory footprint?
+- Stable API?
 
 
 
